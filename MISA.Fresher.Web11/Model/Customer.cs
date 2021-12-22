@@ -2,7 +2,7 @@
 {
     public class Customer
     {
-        private string customerCode;
-        private string fullName;
+        public string CustomerCode { get; set; }
+        public string FullName { get; set; }
     }
 }

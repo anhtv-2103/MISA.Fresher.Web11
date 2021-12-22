@@ -15,9 +15,25 @@ namespace MISA.Fresher.Web11.Controllers
         }
 
         [HttpPost]
-        public Customer GetName2([FromBody] Customer customer)
+        public Customer PostCustomer(Customer customer)
         {
             return customer;
+        }
+
+        [HttpPut("{customerId}")]
+        public object PutCustomer(Customer customer, string? customerId)
+        {
+            return new
+            {
+                customerId = customerId,
+                data = customer
+            };
+        }
+
+        [HttpDelete("{customerId}")]
+        public string DeleteCustomer(string? customerId)
+        {
+            return customerId;
         }
     }
 }
