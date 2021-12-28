@@ -5,7 +5,7 @@ using MISA.WEB11.Core.Exceptions;
 using MISA.WEB11.Core.Interfaces.Infrastructure;
 using MISA.WEB11.Core.Interfaces.Service;
 
-namespace MISA.Fresher.Web11.Controllers
+namespace MISA.WEB11.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
